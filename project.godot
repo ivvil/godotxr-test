@@ -11,16 +11,25 @@ config_version=5
 [application]
 
 config/name="GodotXR test"
-config/features=PackedStringArray("4.3", "Mobile")
+config/features=PackedStringArray("4.3", "C#", "Mobile")
 config/icon="res://icon.svg"
 
 [dotnet]
 
 project/assembly_name="GodotXR test"
 
+[filesystem]
+
+import/blender/enabled=false
+
+[physics]
+
+common/physics_ticks_per_second=90
+
 [rendering]
 
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
 
 [xr]
 
